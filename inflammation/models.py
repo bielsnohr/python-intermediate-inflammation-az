@@ -39,6 +39,12 @@ def daily_min(data):
     return np.min(data, axis=0)
 
 
+def daily_std(data):
+    """Calculate the standard deviation measurements for each day (axis 0)
+    of a 2D inflammation data array."""
+    return np.std(data, axis=0)
+
+
 def attach_names(data, names):
     """Attach names to each patient in a simple list of patient data
 
